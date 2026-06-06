@@ -1,0 +1,37 @@
+site_name: Janus Parts Docs
+site_description: Documentação operacional e técnica do projeto Janus Parts
+site_author: Janus Parts
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Início: index.md
+  - Arquitetura: arquitetura.md
+  - Autenticação: autenticacao.md
+  - Planilha: planilha.md
+  - Publicação: publicacao.md
+  - Mercado Livre: mercado-livre.md
+  - Mercado Envios: mercado-envios.md
+  - Imagens: imagens.md
+  - Problemas comuns: troubleshooting.md
+  - Roadmap: roadmap.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details

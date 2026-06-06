@@ -1,0 +1,1715 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação operacional e técnica do projeto Janus Parts">
+      
+      
+        <meta name="author" content="Janus Parts">
+      
+      
+      
+        <link rel="prev" href="../imagens/">
+      
+      
+        <link rel="next" href="../roadmap/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Problemas comuns - Janus Parts Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Janus Parts Docs" class="md-header__button md-logo" aria-label="Janus Parts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Janus Parts Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Problemas comuns
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../arquitetura/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Arquitetura
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../autenticacao/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Autenticação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../planilha/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Planilha
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../publicacao/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Publicação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mercado-livre/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mercado Livre
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mercado-envios/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mercado Envios
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../imagens/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Imagens
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Problemas comuns
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Janus Parts Docs" class="md-nav__button md-logo" aria-label="Janus Parts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Janus Parts Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autenticacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planilha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planilha
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publicacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mercado-livre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercado Livre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mercado-envios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercado Envios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imagens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imagens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas comuns
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas comuns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-token-invalido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Token Inválido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produto-nao-atualiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Produto Não Atualiza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagem-nao-encontrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagem Não Encontrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coluna-id-ml-nao-encontrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna ID ML Não Encontrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produto-criado-novamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Produto Criado Novamente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mercado-envios-nao-aparece" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mercado Envios Não Aparece
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verificação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mercado-envios-nao-atualiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mercado Envios Não Atualiza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagem-rejeitada-pelo-mercado-livre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagem Rejeitada Pelo Mercado Livre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produto-pequeno-na-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Produto Pequeno na Imagem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erro-durante-upload-da-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro Durante Upload da Imagem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possiveis-causas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possíveis Causas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planilha-atualizada-mas-anuncio-nao-mudou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planilha Atualizada Mas Anúncio Não Mudou
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causa_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estoque-nao-atualiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estoque Não Atualiza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possiveis-causas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possíveis Causas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publish-interrompido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publish Interrompido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintoma_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintoma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possiveis-causas_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possíveis Causas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado Esperado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-problemas-resolvidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Problemas Resolvidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
+<p>Este documento reúne os problemas encontrados durante o desenvolvimento e operação do Janus Parts, bem como suas respectivas soluções.</p>
+<hr />
+<h2 id="access-token-invalido">Access Token Inválido<a class="headerlink" href="#access-token-invalido" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma">Sintoma<a class="headerlink" href="#sintoma" title="Permanent link">&para;</a></h2>
+<p>Ao executar qualquer operação na API do Mercado Livre:</p>
+<div class="highlight"><pre><span></span><code>401 Unauthorized
+</code></pre></div>
+<p>ou</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unauthorized&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalid access token&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="causa">Causa<a class="headerlink" href="#causa" title="Permanent link">&para;</a></h2>
+<p>O access token expirou.</p>
+<hr />
+<h2 id="solucao">Solução<a class="headerlink" href="#solucao" title="Permanent link">&para;</a></h2>
+<p>Renovar o token utilizando o refresh token.</p>
+<p>Consultar:</p>
+<div class="highlight"><pre><span></span><code>autenticacao.md
+</code></pre></div>
+<p>Após atualizar o <code>.env</code>, executar novamente:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>publish.py
+</code></pre></div>
+<hr />
+<h2 id="produto-nao-atualiza">Produto Não Atualiza<a class="headerlink" href="#produto-nao-atualiza" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_1">Sintoma<a class="headerlink" href="#sintoma_1" title="Permanent link">&para;</a></h2>
+<p>O anúncio não é atualizado.</p>
+<p>Erro:</p>
+<div class="highlight"><pre><span></span><code>item.id.invalid
+</code></pre></div>
+<p>ou</p>
+<div class="highlight"><pre><span></span><code>Invalid item id
+</code></pre></div>
+<hr />
+<h2 id="causa_1">Causa<a class="headerlink" href="#causa_1" title="Permanent link">&para;</a></h2>
+<p>O campo:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+</code></pre></div>
+<p>está vazio, incorreto ou contém:</p>
+<div class="highlight"><pre><span></span><code>nan
+</code></pre></div>
+<hr />
+<h2 id="solucao_1">Solução<a class="headerlink" href="#solucao_1" title="Permanent link">&para;</a></h2>
+<p>Verificar a coluna:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+</code></pre></div>
+<p>na planilha.</p>
+<p>Exemplo correto:</p>
+<div class="highlight"><pre><span></span><code>MLB6880703648
+</code></pre></div>
+<hr />
+<h2 id="imagem-nao-encontrada">Imagem Não Encontrada<a class="headerlink" href="#imagem-nao-encontrada" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_2">Sintoma<a class="headerlink" href="#sintoma_2" title="Permanent link">&para;</a></h2>
+<p>Erro durante a publicação:</p>
+<div class="highlight"><pre><span></span><code>Imagem não encontrada
+</code></pre></div>
+<hr />
+<h2 id="causa_2">Causa<a class="headerlink" href="#causa_2" title="Permanent link">&para;</a></h2>
+<p>Não existe arquivo correspondente ao código do produto.</p>
+<hr />
+<h2 id="exemplo">Exemplo<a class="headerlink" href="#exemplo" title="Permanent link">&para;</a></h2>
+<p>Produto:</p>
+<div class="highlight"><pre><span></span><code>113320
+</code></pre></div>
+<p>Imagem esperada:</p>
+<div class="highlight"><pre><span></span><code>imagens/113320.jpg
+</code></pre></div>
+<p>ou</p>
+<div class="highlight"><pre><span></span><code>imagens/113320.png
+</code></pre></div>
+<hr />
+<h2 id="solucao_2">Solução<a class="headerlink" href="#solucao_2" title="Permanent link">&para;</a></h2>
+<p>Adicionar a imagem correta na pasta:</p>
+<div class="highlight"><pre><span></span><code>imagens/
+</code></pre></div>
+<hr />
+<h2 id="coluna-id-ml-nao-encontrada">Coluna ID ML Não Encontrada<a class="headerlink" href="#coluna-id-ml-nao-encontrada" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_3">Sintoma<a class="headerlink" href="#sintoma_3" title="Permanent link">&para;</a></h2>
+<p>Erro:</p>
+<div class="highlight"><pre><span></span><code>KeyError: &#39;ID ML&#39;
+</code></pre></div>
+<hr />
+<h2 id="causa_3">Causa<a class="headerlink" href="#causa_3" title="Permanent link">&para;</a></h2>
+<p>A planilha não possui a coluna:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+</code></pre></div>
+<hr />
+<h2 id="solucao_3">Solução<a class="headerlink" href="#solucao_3" title="Permanent link">&para;</a></h2>
+<p>Adicionar a coluna exatamente com este nome:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+</code></pre></div>
+<p>Exemplo:</p>
+<table>
+<thead>
+<tr>
+<th>CODIGO MERC.</th>
+<th>DESCRICAO MERCADORIA</th>
+<th>ID ML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>113320</td>
+<td>HELICE MOTOR VISCOSA</td>
+<td>MLB6880703648</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="produto-criado-novamente">Produto Criado Novamente<a class="headerlink" href="#produto-criado-novamente" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_4">Sintoma<a class="headerlink" href="#sintoma_4" title="Permanent link">&para;</a></h2>
+<p>O sistema cria um novo anúncio em vez de atualizar um existente.</p>
+<hr />
+<h2 id="causa_4">Causa<a class="headerlink" href="#causa_4" title="Permanent link">&para;</a></h2>
+<p>O campo:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+</code></pre></div>
+<p>está vazio.</p>
+<hr />
+<h2 id="solucao_4">Solução<a class="headerlink" href="#solucao_4" title="Permanent link">&para;</a></h2>
+<p>Verificar se o anúncio já existe.</p>
+<p>Caso exista, preencher corretamente o ID.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>MLB6902472512
+</code></pre></div>
+<hr />
+<h2 id="mercado-envios-nao-aparece">Mercado Envios Não Aparece<a class="headerlink" href="#mercado-envios-nao-aparece" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_5">Sintoma<a class="headerlink" href="#sintoma_5" title="Permanent link">&para;</a></h2>
+<p>O anúncio exibe:</p>
+<div class="highlight"><pre><span></span><code>Entrega a combinar com o vendedor
+</code></pre></div>
+<hr />
+<h2 id="causa_5">Causa<a class="headerlink" href="#causa_5" title="Permanent link">&para;</a></h2>
+<p>O anúncio não está utilizando:</p>
+<div class="highlight"><pre><span></span><code>ME2
+</code></pre></div>
+<p>ou a conta ainda não possui Mercado Envios habilitado.</p>
+<hr />
+<h2 id="verificacao">Verificação<a class="headerlink" href="#verificacao" title="Permanent link">&para;</a></h2>
+<p>Executar:</p>
+<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">obter_shipping</span><span class="p">()</span>
+</code></pre></div>
+<p>ou consultar diretamente a API.</p>
+<p>Resultado esperado:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;modes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;not_specified&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;me2&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="solucao_5">Solução<a class="headerlink" href="#solucao_5" title="Permanent link">&para;</a></h2>
+<p>Habilitar Mercado Envios na conta Mercado Livre.</p>
+<p>Após isso:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>publish.py
+</code></pre></div>
+<p>para atualizar os anúncios.</p>
+<hr />
+<h2 id="mercado-envios-nao-atualiza">Mercado Envios Não Atualiza<a class="headerlink" href="#mercado-envios-nao-atualiza" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_6">Sintoma<a class="headerlink" href="#sintoma_6" title="Permanent link">&para;</a></h2>
+<p>Mesmo após habilitar o Mercado Envios, o anúncio continua exibindo:</p>
+<div class="highlight"><pre><span></span><code>Entrega a combinar com o vendedor
+</code></pre></div>
+<hr />
+<h2 id="solucao_6">Solução<a class="headerlink" href="#solucao_6" title="Permanent link">&para;</a></h2>
+<p>Executar novamente:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>publish.py
+</code></pre></div>
+<p>O método:</p>
+<div class="highlight"><pre><span></span><code><span class="n">atualizar_shipping</span><span class="p">()</span>
+</code></pre></div>
+<p>irá atualizar os anúncios existentes.</p>
+<hr />
+<h2 id="imagem-rejeitada-pelo-mercado-livre">Imagem Rejeitada Pelo Mercado Livre<a class="headerlink" href="#imagem-rejeitada-pelo-mercado-livre" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_7">Sintoma<a class="headerlink" href="#sintoma_7" title="Permanent link">&para;</a></h2>
+<p>Recebimento de e-mail do Mercado Livre informando problemas na imagem.</p>
+<p>Exemplos:</p>
+<div class="highlight"><pre><span></span><code>Imagem com logotipo
+Imagem com texto
+Imagem com marca d&#39;água
+</code></pre></div>
+<hr />
+<h2 id="causa_6">Causa<a class="headerlink" href="#causa_6" title="Permanent link">&para;</a></h2>
+<p>A imagem principal não segue as políticas da plataforma.</p>
+<hr />
+<h2 id="solucao_7">Solução<a class="headerlink" href="#solucao_7" title="Permanent link">&para;</a></h2>
+<p>Utilizar:</p>
+<div class="highlight"><pre><span></span><code>Imagem 1 → Produto limpo
+Imagem 2 → Institucional
+</code></pre></div>
+<p>A imagem principal deve conter apenas o produto.</p>
+<hr />
+<h2 id="produto-pequeno-na-imagem">Produto Pequeno na Imagem<a class="headerlink" href="#produto-pequeno-na-imagem" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_8">Sintoma<a class="headerlink" href="#sintoma_8" title="Permanent link">&para;</a></h2>
+<p>O produto aparece muito pequeno na imagem final.</p>
+<hr />
+<h2 id="causa_7">Causa<a class="headerlink" href="#causa_7" title="Permanent link">&para;</a></h2>
+<p>O algoritmo de recorte removeu áreas importantes da imagem.</p>
+<hr />
+<h2 id="solucao_8">Solução<a class="headerlink" href="#solucao_8" title="Permanent link">&para;</a></h2>
+<p>Remover o processamento excessivo de recorte.</p>
+<p>Utilizar apenas:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ImageOps</span><span class="o">.</span><span class="n">contain</span><span class="p">()</span>
+</code></pre></div>
+<p>ou</p>
+<div class="highlight"><pre><span></span><code><span class="n">ImageOps</span><span class="o">.</span><span class="n">pad</span><span class="p">()</span>
+</code></pre></div>
+<p>para centralização.</p>
+<hr />
+<h2 id="erro-durante-upload-da-imagem">Erro Durante Upload da Imagem<a class="headerlink" href="#erro-durante-upload-da-imagem" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_9">Sintoma<a class="headerlink" href="#sintoma_9" title="Permanent link">&para;</a></h2>
+<p>Falha durante:</p>
+<div class="highlight"><pre><span></span><code>upload_imagem()
+</code></pre></div>
+<hr />
+<h2 id="possiveis-causas">Possíveis Causas<a class="headerlink" href="#possiveis-causas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>token expirado;</li>
+<li>arquivo inexistente;</li>
+<li>imagem corrompida;</li>
+<li>indisponibilidade temporária da API.</li>
+</ul>
+<hr />
+<h2 id="solucao_9">Solução<a class="headerlink" href="#solucao_9" title="Permanent link">&para;</a></h2>
+<p>Verificar:</p>
+<div class="highlight"><pre><span></span><code>1. Token
+2. Caminho do arquivo
+3. Integridade da imagem
+4. Status da API
+</code></pre></div>
+<hr />
+<h2 id="planilha-atualizada-mas-anuncio-nao-mudou">Planilha Atualizada Mas Anúncio Não Mudou<a class="headerlink" href="#planilha-atualizada-mas-anuncio-nao-mudou" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_10">Sintoma<a class="headerlink" href="#sintoma_10" title="Permanent link">&para;</a></h2>
+<p>Preço ou estoque alterados na planilha não aparecem no anúncio.</p>
+<hr />
+<h2 id="causa_8">Causa<a class="headerlink" href="#causa_8" title="Permanent link">&para;</a></h2>
+<p>O publish não foi executado.</p>
+<hr />
+<h2 id="solucao_10">Solução<a class="headerlink" href="#solucao_10" title="Permanent link">&para;</a></h2>
+<p>Executar:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>publish.py
+</code></pre></div>
+<hr />
+<h2 id="estoque-nao-atualiza">Estoque Não Atualiza<a class="headerlink" href="#estoque-nao-atualiza" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_11">Sintoma<a class="headerlink" href="#sintoma_11" title="Permanent link">&para;</a></h2>
+<p>Erro durante:</p>
+<div class="highlight"><pre><span></span><code><span class="n">atualizar_estoque</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="possiveis-causas_1">Possíveis Causas<a class="headerlink" href="#possiveis-causas_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>ID ML incorreto;</li>
+<li>token inválido;</li>
+<li>anúncio inexistente.</li>
+</ul>
+<hr />
+<h2 id="solucao_11">Solução<a class="headerlink" href="#solucao_11" title="Permanent link">&para;</a></h2>
+<p>Verificar:</p>
+<div class="highlight"><pre><span></span><code>ID ML
+Access Token
+Existência do anúncio
+</code></pre></div>
+<hr />
+<h2 id="publish-interrompido">Publish Interrompido<a class="headerlink" href="#publish-interrompido" title="Permanent link">&para;</a></h2>
+<h2 id="sintoma_12">Sintoma<a class="headerlink" href="#sintoma_12" title="Permanent link">&para;</a></h2>
+<p>Execução interrompida antes do final.</p>
+<hr />
+<h2 id="possiveis-causas_2">Possíveis Causas<a class="headerlink" href="#possiveis-causas_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>exceção não tratada;</li>
+<li>problema de rede;</li>
+<li>erro em serviço externo.</li>
+</ul>
+<hr />
+<h2 id="solucao_12">Solução<a class="headerlink" href="#solucao_12" title="Permanent link">&para;</a></h2>
+<p>Verificar o traceback exibido no terminal.</p>
+<p>O publish atual utiliza:</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="o">...</span>
+</code></pre></div>
+<p>permitindo que os demais produtos continuem sendo processados.</p>
+<hr />
+<h2 id="resultado-esperado">Resultado Esperado<a class="headerlink" href="#resultado-esperado" title="Permanent link">&para;</a></h2>
+<p>Ao final da execução:</p>
+<div class="highlight"><pre><span></span><code>============================================================
+SUCESSOS: 56
+CRIADOS: 0
+ATUALIZADOS: 56
+ERROS: 0
+PROCESSAMENTO FINALIZADO
+</code></pre></div>
+<hr />
+<h2 id="historico-de-problemas-resolvidos">Histórico de Problemas Resolvidos<a class="headerlink" href="#historico-de-problemas-resolvidos" title="Permanent link">&para;</a></h2>
+<p>Durante a implantação inicial do Janus Parts foram resolvidos:</p>
+<ul>
+<li>token expirado;</li>
+<li>ausência da coluna ID ML;</li>
+<li>anúncios sendo recriados;</li>
+<li>Mercado Envios desabilitado;</li>
+<li>imagens rejeitadas pelo Mercado Livre;</li>
+<li>problemas de alinhamento das imagens;</li>
+<li>sincronização automática de estoque;</li>
+<li>sincronização automática de preço;</li>
+<li>gravação automática do ID ML.</li>
+</ul>
+<p>Todos esses cenários já possuem solução documentada neste arquivo.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

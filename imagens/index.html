@@ -1,0 +1,1381 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação operacional e técnica do projeto Janus Parts">
+      
+      
+        <meta name="author" content="Janus Parts">
+      
+      
+      
+        <link rel="prev" href="../mercado-envios/">
+      
+      
+        <link rel="next" href="../troubleshooting/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Imagens - Janus Parts Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sistema-de-imagens" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Janus Parts Docs" class="md-header__button md-logo" aria-label="Janus Parts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Janus Parts Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Imagens
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../arquitetura/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Arquitetura
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../autenticacao/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Autenticação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../planilha/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Planilha
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../publicacao/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Publicação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mercado-livre/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mercado Livre
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mercado-envios/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mercado Envios
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Imagens
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Problemas comuns
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../roadmap/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Janus Parts Docs" class="md-nav__button md-logo" aria-label="Janus Parts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Janus Parts Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autenticacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planilha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planilha
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publicacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mercado-livre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercado Livre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mercado-envios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercado Envios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imagens
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imagens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-de-diretorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Diretórios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagens-originais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens Originais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagens-geradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens Geradas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de Imagem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagem-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagem do Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimensões
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagem-institucional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagem Institucional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-de-geracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fluxo de Geração
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatos-aceitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos Aceitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#localizacao-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Localização Automática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erro-de-imagem-nao-encontrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro de Imagem Não Encontrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-para-mercado-livre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upload para Mercado Livre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizacao-das-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atualização das Imagens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boas Práticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizar-imagens-nitidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilizar imagens nítidas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundo-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundo Original
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nome-dos-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nome dos Arquivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primeira Versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-encontrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema Encontrado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao-implementada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solução Implementada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#melhorias-futuras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Melhorias Futuras
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagens-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens Adicionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marca-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marca Automática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geracao-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geração por Categoria
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas comuns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sistema-de-imagens">Sistema de Imagens<a class="headerlink" href="#sistema-de-imagens" title="Permanent link">&para;</a></h1>
+<p>O módulo de imagens do Janus Parts é responsável por gerar as imagens utilizadas nos anúncios do Mercado Livre.</p>
+<p>As imagens são processadas automaticamente durante a execução do:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>publish.py
+</code></pre></div>
+<hr />
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Padronizar a apresentação visual dos anúncios.</p>
+<p>Benefícios:</p>
+<ul>
+<li>identidade visual consistente;</li>
+<li>conformidade com as regras do Mercado Livre;</li>
+<li>redução de trabalho manual;</li>
+<li>atualização automática das imagens dos anúncios.</li>
+</ul>
+<hr />
+<h2 id="estrutura-de-diretorios">Estrutura de Diretórios<a class="headerlink" href="#estrutura-de-diretorios" title="Permanent link">&para;</a></h2>
+<h2 id="imagens-originais">Imagens Originais<a class="headerlink" href="#imagens-originais" title="Permanent link">&para;</a></h2>
+<p>As imagens fornecidas pela empresa ficam em:</p>
+<div class="highlight"><pre><span></span><code>imagens/
+</code></pre></div>
+<p>Exemplos:</p>
+<div class="highlight"><pre><span></span><code>imagens/113320.jpg
+imagens/113348.jpg
+imagens/113410.png
+</code></pre></div>
+<p>O nome do arquivo deve ser igual ao código do produto.</p>
+<hr />
+<h2 id="imagens-geradas">Imagens Geradas<a class="headerlink" href="#imagens-geradas" title="Permanent link">&para;</a></h2>
+<p>As imagens processadas são armazenadas em:</p>
+<div class="highlight"><pre><span></span><code>output/
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>output/113320_produto.png
+output/113320_institucional.png
+</code></pre></div>
+<hr />
+<h2 id="tipos-de-imagem">Tipos de Imagem<a class="headerlink" href="#tipos-de-imagem" title="Permanent link">&para;</a></h2>
+<p>O sistema gera duas imagens para cada produto.</p>
+<hr />
+<h2 id="imagem-do-produto">Imagem do Produto<a class="headerlink" href="#imagem-do-produto" title="Permanent link">&para;</a></h2>
+<p>Arquivo:</p>
+<div class="highlight"><pre><span></span><code>output/CODIGO_produto.png
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>output/113320_produto.png
+</code></pre></div>
+<p>Esta é a imagem principal do anúncio.</p>
+<hr />
+<h2 id="caracteristicas">Características<a class="headerlink" href="#caracteristicas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>fundo branco;</li>
+<li>produto centralizado;</li>
+<li>formato quadrado;</li>
+<li>sem textos;</li>
+<li>sem logotipos;</li>
+<li>sem marca d'água.</li>
+</ul>
+<hr />
+<h2 id="motivo">Motivo<a class="headerlink" href="#motivo" title="Permanent link">&para;</a></h2>
+<p>O Mercado Livre possui regras rígidas para imagens principais.</p>
+<p>A imagem de capa não pode conter:</p>
+<ul>
+<li>logotipos;</li>
+<li>telefones;</li>
+<li>URLs;</li>
+<li>textos promocionais;</li>
+<li>marcas d'água;</li>
+<li>informações comerciais.</li>
+</ul>
+<p>Caso contrário o anúncio pode ser:</p>
+<div class="highlight"><pre><span></span><code>Pausado
+</code></pre></div>
+<p>ou</p>
+<div class="highlight"><pre><span></span><code>Rebaixado nos resultados
+</code></pre></div>
+<hr />
+<h2 id="dimensoes">Dimensões<a class="headerlink" href="#dimensoes" title="Permanent link">&para;</a></h2>
+<p>Canvas utilizado:</p>
+<div class="highlight"><pre><span></span><code>1200 x 1200
+</code></pre></div>
+<p>O produto é redimensionado proporcionalmente e centralizado.</p>
+<hr />
+<h2 id="imagem-institucional">Imagem Institucional<a class="headerlink" href="#imagem-institucional" title="Permanent link">&para;</a></h2>
+<p>Arquivo:</p>
+<div class="highlight"><pre><span></span><code>output/CODIGO_institucional.png
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>output/113320_institucional.png
+</code></pre></div>
+<p>Esta imagem é utilizada como segunda imagem do anúncio.</p>
+<hr />
+<h2 id="objetivo_1">Objetivo<a class="headerlink" href="#objetivo_1" title="Permanent link">&para;</a></h2>
+<p>Apresentar a identidade visual da Janus Parts.</p>
+<p>Elementos presentes:</p>
+<ul>
+<li>logotipo Janus Parts;</li>
+<li>identidade visual da empresa;</li>
+<li>informações institucionais.</li>
+</ul>
+<hr />
+<h2 id="utilizacao">Utilização<a class="headerlink" href="#utilizacao" title="Permanent link">&para;</a></h2>
+<p>Ordem utilizada nos anúncios:</p>
+<div class="highlight"><pre><span></span><code>Imagem 1 → Produto
+Imagem 2 → Institucional
+</code></pre></div>
+<p>Esta configuração segue as recomendações do Mercado Livre.</p>
+<hr />
+<h2 id="fluxo-de-geracao">Fluxo de Geração<a class="headerlink" href="#fluxo-de-geracao" title="Permanent link">&para;</a></h2>
+<p>Durante a execução do publish:</p>
+<div class="highlight"><pre><span></span><code>Produto
+↓
+Localizar imagem original
+↓
+Gerar imagem do produto
+↓
+Gerar imagem institucional
+↓
+Salvar em output/
+↓
+Enviar para Mercado Livre
+</code></pre></div>
+<hr />
+<h2 id="formatos-aceitos">Formatos Aceitos<a class="headerlink" href="#formatos-aceitos" title="Permanent link">&para;</a></h2>
+<p>O sistema procura automaticamente pelas extensões:</p>
+<div class="highlight"><pre><span></span><code>jpg
+jpeg
+png
+webp
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>113320.jpg
+113320.jpeg
+113320.png
+113320.webp
+</code></pre></div>
+<p>A primeira encontrada será utilizada.</p>
+<hr />
+<h2 id="localizacao-automatica">Localização Automática<a class="headerlink" href="#localizacao-automatica" title="Permanent link">&para;</a></h2>
+<p>Implementação:</p>
+<div class="highlight"><pre><span></span><code><span class="n">_localizar_imagem</span><span class="p">()</span>
+</code></pre></div>
+<p>Fluxo:</p>
+<div class="highlight"><pre><span></span><code>Código do produto
+↓
+Pesquisar extensões conhecidas
+↓
+Retornar caminho encontrado
+</code></pre></div>
+<hr />
+<h2 id="erro-de-imagem-nao-encontrada">Erro de Imagem Não Encontrada<a class="headerlink" href="#erro-de-imagem-nao-encontrada" title="Permanent link">&para;</a></h2>
+<p>Caso nenhuma imagem seja localizada:</p>
+<div class="highlight"><pre><span></span><code>Imagem não encontrada
+</code></pre></div>
+<p>O produto será ignorado.</p>
+<p>Os demais produtos continuarão sendo processados.</p>
+<hr />
+<h2 id="upload-para-mercado-livre">Upload para Mercado Livre<a class="headerlink" href="#upload-para-mercado-livre" title="Permanent link">&para;</a></h2>
+<p>Após a geração, as imagens são enviadas para o Mercado Livre.</p>
+<p>Fluxo:</p>
+<div class="highlight"><pre><span></span><code>Imagem local
+↓
+Upload
+↓
+Picture ID
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>804960-MLB111656899436_062026
+</code></pre></div>
+<p>Esse identificador é utilizado na criação ou atualização do anúncio.</p>
+<hr />
+<h2 id="atualizacao-das-imagens">Atualização das Imagens<a class="headerlink" href="#atualizacao-das-imagens" title="Permanent link">&para;</a></h2>
+<p>Quando um produto já possui ID ML:</p>
+<div class="highlight"><pre><span></span><code>MLB6880703648
+</code></pre></div>
+<p>As imagens antigas são substituídas automaticamente.</p>
+<p>Fluxo:</p>
+<div class="highlight"><pre><span></span><code>Gerar novas imagens
+↓
+Upload
+↓
+Atualizar anúncio
+</code></pre></div>
+<hr />
+<h2 id="boas-praticas">Boas Práticas<a class="headerlink" href="#boas-praticas" title="Permanent link">&para;</a></h2>
+<h2 id="utilizar-imagens-nitidas">Utilizar imagens nítidas<a class="headerlink" href="#utilizar-imagens-nitidas" title="Permanent link">&para;</a></h2>
+<p>Evitar:</p>
+<ul>
+<li>imagens desfocadas;</li>
+<li>imagens com baixa resolução;</li>
+<li>imagens cortadas.</li>
+</ul>
+<hr />
+<h2 id="fundo-original">Fundo Original<a class="headerlink" href="#fundo-original" title="Permanent link">&para;</a></h2>
+<p>Sempre que possível utilizar imagens com fundo neutro.</p>
+<p>O sistema realizará apenas o enquadramento e centralização.</p>
+<hr />
+<h2 id="nome-dos-arquivos">Nome dos Arquivos<a class="headerlink" href="#nome-dos-arquivos" title="Permanent link">&para;</a></h2>
+<p>Manter exatamente o código do produto.</p>
+<p>Exemplo correto:</p>
+<div class="highlight"><pre><span></span><code>113320.jpg
+</code></pre></div>
+<p>Exemplo incorreto:</p>
+<div class="highlight"><pre><span></span><code>helice_volvo.jpg
+foto1.jpg
+produto.jpg
+</code></pre></div>
+<hr />
+<h2 id="historico">Histórico<a class="headerlink" href="#historico" title="Permanent link">&para;</a></h2>
+<h2 id="primeira-versao">Primeira Versão<a class="headerlink" href="#primeira-versao" title="Permanent link">&para;</a></h2>
+<p>A primeira implementação utilizava imagens com identidade visual diretamente na capa do anúncio.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Imagem principal
+↓
+Logo Janus
+↓
+Texto
+↓
+Código da peça
+</code></pre></div>
+<hr />
+<h2 id="problema-encontrado">Problema Encontrado<a class="headerlink" href="#problema-encontrado" title="Permanent link">&para;</a></h2>
+<p>O Mercado Livre enviou notificações informando que as imagens continham:</p>
+<ul>
+<li>logotipo;</li>
+<li>textos;</li>
+<li>marca d'água.</li>
+</ul>
+<p>Esses elementos violavam as regras da plataforma.</p>
+<hr />
+<h2 id="solucao-implementada">Solução Implementada<a class="headerlink" href="#solucao-implementada" title="Permanent link">&para;</a></h2>
+<p>Nova estratégia:</p>
+<div class="highlight"><pre><span></span><code>Imagem 1 → Produto limpo
+Imagem 2 → Institucional Janus
+</code></pre></div>
+<p>Resultado:</p>
+<div class="highlight"><pre><span></span><code>Anúncios aceitos
+Mercado Livre aprovado
+Galeria padronizada
+</code></pre></div>
+<hr />
+<h2 id="melhorias-futuras">Melhorias Futuras<a class="headerlink" href="#melhorias-futuras" title="Permanent link">&para;</a></h2>
+<h2 id="imagens-adicionais">Imagens Adicionais<a class="headerlink" href="#imagens-adicionais" title="Permanent link">&para;</a></h2>
+<p>Gerar automaticamente:</p>
+<div class="highlight"><pre><span></span><code>Imagem 3 → Aplicações
+Imagem 4 → Referências
+Imagem 5 → Informações técnicas
+</code></pre></div>
+<hr />
+<h2 id="marca-automatica">Marca Automática<a class="headerlink" href="#marca-automatica" title="Permanent link">&para;</a></h2>
+<p>Adicionar automaticamente o logotipo do fabricante quando permitido.</p>
+<hr />
+<h2 id="geracao-por-categoria">Geração por Categoria<a class="headerlink" href="#geracao-por-categoria" title="Permanent link">&para;</a></h2>
+<p>Adaptar o layout das imagens conforme a categoria do produto.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

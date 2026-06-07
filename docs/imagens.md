@@ -25,7 +25,7 @@ Benefícios:
 
 ## Estrutura de Diretórios
 
-## Imagens Originais
+### Imagens Originais
 
 As imagens fornecidas pela empresa ficam em:
 
@@ -343,60 +343,9 @@ produto.jpg
 
 ---
 
-## Histórico
-
-## Primeira Versão
-
-A primeira implementação utilizava imagens com identidade visual diretamente na capa do anúncio.
-
-Exemplo:
-
-```text
-Imagem principal
-↓
-Logo Janus
-↓
-Texto
-↓
-Código da peça
-```
-
----
-
-## Problema Encontrado
-
-O Mercado Livre enviou notificações informando que as imagens continham:
-
-- logotipo;
-- textos;
-- marca d'água.
-
-Esses elementos violavam as regras da plataforma.
-
----
-
-## Solução Implementada
-
-Nova estratégia:
-
-```text
-Imagem 1 → Produto limpo
-Imagem 2 → Institucional Janus
-```
-
-Resultado:
-
-```text
-Anúncios aceitos
-Mercado Livre aprovado
-Galeria padronizada
-```
-
----
-
 ## Melhorias Futuras
 
-## Imagens Adicionais
+### Imagens Adicionais
 
 Gerar automaticamente:
 
@@ -408,12 +357,12 @@ Imagem 5 → Informações técnicas
 
 ---
 
-## Marca Automática
+### Marca Automática
 
 Adicionar automaticamente o logotipo do fabricante quando permitido.
 
 ---
 
-## Geração por Categoria
+### Geração por Categoria
 
 Adaptar o layout das imagens conforme a categoria do produto.

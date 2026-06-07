@@ -36,7 +36,3 @@ Salvar resultado da execução em arquivo `.log`.
 ### Renovação automática de token
 
 Implementar renovação automática usando `refresh_token`.
-
-### Segunda planilha
-
-Processar novos lotes mantendo a mesma estrutura.

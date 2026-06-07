@@ -238,7 +238,7 @@ PROCESSAMENTO FINALIZADO
 
 ## Boas Práticas
 
-## Antes de executar
+### Antes de executar
 
 Verificar:
 
@@ -247,7 +247,7 @@ Verificar:
 - se os preços estão atualizados;
 - se os estoques estão corretos.
 
-## Após executar
+### Após executar
 
 Verificar:
 

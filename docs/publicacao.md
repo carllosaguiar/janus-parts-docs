@@ -159,28 +159,6 @@ Exemplo válido:
 ```text
 3627.26
 ```
-
-Exemplos inválidos:
-
-```text
-0
--10
-```
-
----
-
-## Estoque
-
-O estoque deve ser igual ou maior que zero.
-
-Exemplos válidos:
-
-```text
-0
-5
-100
-```
-
 ---
 
 ## Imagem
@@ -359,25 +337,6 @@ ATUALIZADOS: 56
 ERROS: 0
 PROCESSAMENTO FINALIZADO
 ```
-
-## Significado
-
-### SUCESSOS
-
-Quantidade total de produtos processados com sucesso.
-
-### CRIADOS
-
-Quantidade de anúncios novos criados.
-
-### ATUALIZADOS
-
-Quantidade de anúncios existentes atualizados.
-
-### ERROS
-
-Quantidade de produtos que apresentaram falha durante o processamento.
-
 ---
 
 ## Boas Práticas
@@ -413,26 +372,3 @@ ou sempre que houver alteração de:
 - imagens.
 
 ---
-
-## Histórico do Projeto
-
-## Primeira Publicação
-
-Primeiro lote publicado com sucesso:
-
-```text
-56 produtos
-0 erros
-Mercado Envios (ME2) ativo
-```
-
-Durante o desenvolvimento foram implementadas:
-
-- criação automática de anúncios;
-- atualização automática de anúncios;
-- gravação automática do ID ML;
-- geração de imagens padronizadas;
-- suporte ao Mercado Envios;
-- atualização automática de preço e estoque.
-
-Este marco representa a entrada do Janus Parts em operação real.

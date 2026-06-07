@@ -131,12 +131,12 @@ Responsável pela comunicação com a API de anúncios do Mercado Livre.
 Métodos principais:
 
 - `obter_item()`
-- `listar_itens_usuario()`
-- `criar_item()`
-- `atualizar_imagens()`
-- `atualizar_preco()`
-- `atualizar_estoque()`
-- `atualizar_shipping()`
+- `list_user_items()`
+- `create_item()`
+- `update_image()`
+- `update_price()`
+- `update_inventory()`
+- `update_shipping()`
 
 ---
 
@@ -144,7 +144,7 @@ Métodos principais:
 
 Responsável por obter o token de acesso configurado no ambiente.
 
-Atualmente lê o valor de:
+Atualmente lê o valor da variável:
 
 ```text
 ML_ACCESS_TOKEN

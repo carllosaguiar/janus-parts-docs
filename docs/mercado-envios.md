@@ -21,39 +21,11 @@ Benefícios:
 
 ---
 
-## Situação Inicial
-
-Durante os primeiros testes os anúncios exibiam:
-
-```text
-Entrega a combinar com o vendedor
-```
-
-Isso ocorria porque os anúncios estavam sendo criados com:
-
-```json
-{
-  "mode": "not_specified"
-}
-```
-
-ou
-
-```json
-{
-  "mode": "custom"
-}
-```
-
-Nesses modos o Mercado Livre não controla o envio.
-
----
-
 ## Ativação do Mercado Envios
 
 A ativação foi realizada diretamente na conta Mercado Livre.
 
-Após a configuração, a API passou a retornar:
+Após a configuração, verificar se a API passa a retornar:
 
 ```json
 {
@@ -75,7 +47,7 @@ E também:
 }
 ```
 
-Isso confirmou que o Mercado Envios estava habilitado para a conta.
+Isso confirma que o Mercado Envios estava habilitado para a conta.
 
 ---
 
@@ -113,7 +85,7 @@ Não existe coleta automática no endereço do vendedor.
 
 ## Fluxo de Compra
 
-## 1. Compra
+### 1. Compra
 
 O comprador realiza a compra do produto.
 
@@ -123,7 +95,7 @@ Compra realizada
 
 ---
 
-## 2. Aprovação do Pagamento
+### 2. Aprovação do Pagamento
 
 O Mercado Livre processa o pagamento.
 
@@ -135,7 +107,7 @@ Pagamento aprovado
 
 ---
 
-## 3. Geração da Etiqueta
+### 3. Geração da Etiqueta
 
 Após a aprovação do pagamento, o Mercado Livre gera automaticamente:
 
@@ -147,7 +119,7 @@ O vendedor não precisa preencher endereço manualmente.
 
 ---
 
-## 4. Impressão
+### 4. Impressão
 
 O vendedor imprime a etiqueta fornecida pelo Mercado Livre.
 
@@ -159,7 +131,7 @@ PDF A4
 
 ---
 
-## 5. Embalagem
+### 5. Embalagem
 
 O produto deve ser embalado adequadamente.
 
@@ -171,7 +143,7 @@ Recomendações:
 
 ---
 
-## 6. Postagem
+### 6. Postagem
 
 O vendedor leva o pacote até o ponto de postagem indicado pelo Mercado Livre.
 
@@ -187,7 +159,7 @@ Levar ao ponto de postagem
 
 ---
 
-## 7. Transporte
+### 7. Transporte
 
 Após a postagem:
 
@@ -203,7 +175,7 @@ Todo o rastreamento é atualizado automaticamente.
 
 ---
 
-## 8. Entrega
+### 8. Entrega
 
 Quando o comprador recebe o produto:
 
@@ -213,7 +185,7 @@ Pedido entregue
 
 ---
 
-## 9. Liberação do Pagamento
+### 9. Liberação do Pagamento
 
 Após a confirmação da entrega, o Mercado Livre libera o valor da venda conforme as regras da conta.
 
@@ -236,7 +208,7 @@ Liberação do pagamento
 Foi implementado no projeto o método:
 
 ```python
-atualizar_shipping()
+update_shipping()
 ```
 
 Responsável por converter anúncios antigos para utilizar ME2.
@@ -244,7 +216,7 @@ Responsável por converter anúncios antigos para utilizar ME2.
 Exemplo:
 
 ```python
-item_service.atualizar_shipping(
+item_service.update_shipping(
     id_ml
 )
 ```
@@ -275,9 +247,9 @@ Isso confirma que o Mercado Envios está funcionando corretamente.
 
 ---
 
-## Vantagens Operacionais
+## Vantagens Operacionais do uso de ME2
 
-## Para o Comprador
+### Para o Comprador
 
 - previsão de entrega;
 - rastreamento;
@@ -291,57 +263,3 @@ Isso confirma que o Mercado Envios está funcionando corretamente.
 - maior conversão dos anúncios.
 
 ---
-
-## Problemas Comuns
-
-## Anúncio mostra "Entrega a combinar com o vendedor"
-
-Possíveis causas:
-
-- anúncio criado sem ME2;
-- conta sem Mercado Envios habilitado;
-- shipping não atualizado.
-
-Solução:
-
-Executar:
-
-```python
-item_service.atualizar_shipping(
-    id_ml
-)
-```
-
-ou republicar o anúncio.
-
----
-
-## API não retorna "me2"
-
-Exemplo:
-
-```json
-{
-  "modes": [
-    "custom",
-    "not_specified"
-  ]
-}
-```
-
-Isso significa que o Mercado Envios ainda não foi habilitado para a conta.
-
----
-
-## Histórico
-
-Durante a primeira publicação operacional do Janus Parts:
-
-```text
-56 anúncios atualizados
-Mercado Envios habilitado
-ME2 funcionando
-Previsão de entrega ativa
-```
-
-A partir deste momento todos os anúncios passaram a utilizar a logística oficial do Mercado Livre.

@@ -68,7 +68,7 @@ Implementação atual:
 ```python
 class MLAuthService:
 
-    def obter_access_token(self):
+    def get_access_token(self):
         return os.getenv(
             "ML_ACCESS_TOKEN"
         )
@@ -114,13 +114,13 @@ Responsável pelo gerenciamento dos anúncios.
 Métodos implementados:
 
 ```text
-obter_item()
-listar_itens_usuario()
-criar_item()
-atualizar_imagens()
-atualizar_preco()
-atualizar_estoque()
-atualizar_shipping()
+get_item()
+list_user_items()
+create_item()
+update_image()
+update_price()
+update_inventory()
+update_shipping()
 ```
 
 ---
@@ -132,7 +132,7 @@ Permite consultar um anúncio existente.
 Exemplo:
 
 ```python
-item = service.obter_item(
+item = service.get_item(
     "MLB6880703648"
 )
 ```
@@ -146,7 +146,7 @@ Permite listar anúncios da conta.
 Exemplo:
 
 ```python
-itens = service.listar_itens_usuario()
+itens = service.list_user_items()
 ```
 
 Resultado:
@@ -219,7 +219,7 @@ Substitui completamente as imagens do anúncio.
 Exemplo:
 
 ```python
-service.atualizar_imagens(
+service.update_image(
     "MLB6880703648",
     [
         produto_id,
@@ -235,7 +235,7 @@ service.atualizar_imagens(
 Exemplo:
 
 ```python
-service.atualizar_preco(
+service.update_price(
     "MLB6880703648",
     3627.26
 )
@@ -248,7 +248,7 @@ service.atualizar_preco(
 Exemplo:
 
 ```python
-service.atualizar_estoque(
+service.update_inventory(
     "MLB6880703648",
     5
 )

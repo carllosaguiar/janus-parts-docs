@@ -638,17 +638,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#situacao-inicial" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Situação Inicial
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ativacao-do-mercado-envios" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -690,9 +679,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Fluxo de Compra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-compra" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -702,8 +692,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#2-aprovacao-do-pagamento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -713,8 +703,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#3-geracao-da-etiqueta" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -724,8 +714,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#4-impressao" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -735,8 +725,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#5-embalagem" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -746,8 +736,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#6-postagem" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -757,8 +747,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#7-transporte" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -768,8 +758,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#8-entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -779,8 +769,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#9-liberacao-do-pagamento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -788,6 +778,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -814,17 +809,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vantagens-operacionais" class="md-nav__link">
+  <a href="#vantagens-operacionais-do-uso-de-me2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vantagens Operacionais
+        Vantagens Operacionais do uso de ME2
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Vantagens Operacionais do uso de ME2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#para-o-comprador" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -834,56 +830,17 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#para-o-vendedor" class="md-nav__link">
     <span class="md-ellipsis">
       
         Para o Vendedor
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#problemas-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problemas Comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anuncio-mostra-entrega-a-combinar-com-o-vendedor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Anúncio mostra "Entrega a combinar com o vendedor"
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-nao-retorna-me2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        API não retorna "me2"
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#historico" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Histórico
       
     </span>
   </a>
@@ -1012,25 +969,9 @@
 <li>maior confiança para o comprador.</li>
 </ul>
 <hr />
-<h2 id="situacao-inicial">Situação Inicial<a class="headerlink" href="#situacao-inicial" title="Permanent link">&para;</a></h2>
-<p>Durante os primeiros testes os anúncios exibiam:</p>
-<div class="highlight"><pre><span></span><code>Entrega a combinar com o vendedor
-</code></pre></div>
-<p>Isso ocorria porque os anúncios estavam sendo criados com:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;not_specified&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>ou</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;custom&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Nesses modos o Mercado Livre não controla o envio.</p>
-<hr />
 <h2 id="ativacao-do-mercado-envios">Ativação do Mercado Envios<a class="headerlink" href="#ativacao-do-mercado-envios" title="Permanent link">&para;</a></h2>
 <p>A ativação foi realizada diretamente na conta Mercado Livre.</p>
-<p>Após a configuração, a API passou a retornar:</p>
+<p>Após a configuração, verificar se a API passa a retornar:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;modes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
@@ -1046,7 +987,7 @@
 <span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;active&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Isso confirmou que o Mercado Envios estava habilitado para a conta.</p>
+<p>Isso confirma que o Mercado Envios estava habilitado para a conta.</p>
 <hr />
 <h2 id="configuracao-utilizada">Configuração Utilizada<a class="headerlink" href="#configuracao-utilizada" title="Permanent link">&para;</a></h2>
 <p>Os anúncios são criados utilizando:</p>
@@ -1067,18 +1008,18 @@
 <p>Não existe coleta automática no endereço do vendedor.</p>
 <hr />
 <h2 id="fluxo-de-compra">Fluxo de Compra<a class="headerlink" href="#fluxo-de-compra" title="Permanent link">&para;</a></h2>
-<h2 id="1-compra">1. Compra<a class="headerlink" href="#1-compra" title="Permanent link">&para;</a></h2>
+<h3 id="1-compra">1. Compra<a class="headerlink" href="#1-compra" title="Permanent link">&para;</a></h3>
 <p>O comprador realiza a compra do produto.</p>
 <div class="highlight"><pre><span></span><code>Compra realizada
 </code></pre></div>
 <hr />
-<h2 id="2-aprovacao-do-pagamento">2. Aprovação do Pagamento<a class="headerlink" href="#2-aprovacao-do-pagamento" title="Permanent link">&para;</a></h2>
+<h3 id="2-aprovacao-do-pagamento">2. Aprovação do Pagamento<a class="headerlink" href="#2-aprovacao-do-pagamento" title="Permanent link">&para;</a></h3>
 <p>O Mercado Livre processa o pagamento.</p>
 <p>Status comum:</p>
 <div class="highlight"><pre><span></span><code>Pagamento aprovado
 </code></pre></div>
 <hr />
-<h2 id="3-geracao-da-etiqueta">3. Geração da Etiqueta<a class="headerlink" href="#3-geracao-da-etiqueta" title="Permanent link">&para;</a></h2>
+<h3 id="3-geracao-da-etiqueta">3. Geração da Etiqueta<a class="headerlink" href="#3-geracao-da-etiqueta" title="Permanent link">&para;</a></h3>
 <p>Após a aprovação do pagamento, o Mercado Livre gera automaticamente:</p>
 <ul>
 <li>etiqueta;</li>
@@ -1087,13 +1028,13 @@
 </ul>
 <p>O vendedor não precisa preencher endereço manualmente.</p>
 <hr />
-<h2 id="4-impressao">4. Impressão<a class="headerlink" href="#4-impressao" title="Permanent link">&para;</a></h2>
+<h3 id="4-impressao">4. Impressão<a class="headerlink" href="#4-impressao" title="Permanent link">&para;</a></h3>
 <p>O vendedor imprime a etiqueta fornecida pelo Mercado Livre.</p>
 <p>Formato atual:</p>
 <div class="highlight"><pre><span></span><code>PDF A4
 </code></pre></div>
 <hr />
-<h2 id="5-embalagem">5. Embalagem<a class="headerlink" href="#5-embalagem" title="Permanent link">&para;</a></h2>
+<h3 id="5-embalagem">5. Embalagem<a class="headerlink" href="#5-embalagem" title="Permanent link">&para;</a></h3>
 <p>O produto deve ser embalado adequadamente.</p>
 <p>Recomendações:</p>
 <ul>
@@ -1102,7 +1043,7 @@
 <li>utilizar embalagem compatível com o tamanho da peça.</li>
 </ul>
 <hr />
-<h2 id="6-postagem">6. Postagem<a class="headerlink" href="#6-postagem" title="Permanent link">&para;</a></h2>
+<h3 id="6-postagem">6. Postagem<a class="headerlink" href="#6-postagem" title="Permanent link">&para;</a></h3>
 <p>O vendedor leva o pacote até o ponto de postagem indicado pelo Mercado Livre.</p>
 <p>Fluxo:</p>
 <div class="highlight"><pre><span></span><code>Imprimir etiqueta
@@ -1112,7 +1053,7 @@ Embalar produto
 Levar ao ponto de postagem
 </code></pre></div>
 <hr />
-<h2 id="7-transporte">7. Transporte<a class="headerlink" href="#7-transporte" title="Permanent link">&para;</a></h2>
+<h3 id="7-transporte">7. Transporte<a class="headerlink" href="#7-transporte" title="Permanent link">&para;</a></h3>
 <p>Após a postagem:</p>
 <div class="highlight"><pre><span></span><code>Mercado Livre
 ↓
@@ -1122,12 +1063,12 @@ Comprador
 </code></pre></div>
 <p>Todo o rastreamento é atualizado automaticamente.</p>
 <hr />
-<h2 id="8-entrega">8. Entrega<a class="headerlink" href="#8-entrega" title="Permanent link">&para;</a></h2>
+<h3 id="8-entrega">8. Entrega<a class="headerlink" href="#8-entrega" title="Permanent link">&para;</a></h3>
 <p>Quando o comprador recebe o produto:</p>
 <div class="highlight"><pre><span></span><code>Pedido entregue
 </code></pre></div>
 <hr />
-<h2 id="9-liberacao-do-pagamento">9. Liberação do Pagamento<a class="headerlink" href="#9-liberacao-do-pagamento" title="Permanent link">&para;</a></h2>
+<h3 id="9-liberacao-do-pagamento">9. Liberação do Pagamento<a class="headerlink" href="#9-liberacao-do-pagamento" title="Permanent link">&para;</a></h3>
 <p>Após a confirmação da entrega, o Mercado Livre libera o valor da venda conforme as regras da conta.</p>
 <p>Fluxo simplificado:</p>
 <div class="highlight"><pre><span></span><code>Compra
@@ -1141,11 +1082,11 @@ Liberação do pagamento
 <hr />
 <h2 id="atualizacao-dos-anuncios-existentes">Atualização dos Anúncios Existentes<a class="headerlink" href="#atualizacao-dos-anuncios-existentes" title="Permanent link">&para;</a></h2>
 <p>Foi implementado no projeto o método:</p>
-<div class="highlight"><pre><span></span><code><span class="n">atualizar_shipping</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">update_shipping</span><span class="p">()</span>
 </code></pre></div>
 <p>Responsável por converter anúncios antigos para utilizar ME2.</p>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">item_service</span><span class="o">.</span><span class="n">atualizar_shipping</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">item_service</span><span class="o">.</span><span class="n">update_shipping</span><span class="p">(</span>
     <span class="n">id_ml</span>
 <span class="p">)</span>
 </code></pre></div>
@@ -1162,8 +1103,8 @@ Liberação do pagamento
 </code></pre></div>
 <p>Isso confirma que o Mercado Envios está funcionando corretamente.</p>
 <hr />
-<h2 id="vantagens-operacionais">Vantagens Operacionais<a class="headerlink" href="#vantagens-operacionais" title="Permanent link">&para;</a></h2>
-<h2 id="para-o-comprador">Para o Comprador<a class="headerlink" href="#para-o-comprador" title="Permanent link">&para;</a></h2>
+<h2 id="vantagens-operacionais-do-uso-de-me2">Vantagens Operacionais do uso de ME2<a class="headerlink" href="#vantagens-operacionais-do-uso-de-me2" title="Permanent link">&para;</a></h2>
+<h3 id="para-o-comprador">Para o Comprador<a class="headerlink" href="#para-o-comprador" title="Permanent link">&para;</a></h3>
 <ul>
 <li>previsão de entrega;</li>
 <li>rastreamento;</li>
@@ -1177,41 +1118,6 @@ Liberação do pagamento
 <li>maior conversão dos anúncios.</li>
 </ul>
 <hr />
-<h2 id="problemas-comuns">Problemas Comuns<a class="headerlink" href="#problemas-comuns" title="Permanent link">&para;</a></h2>
-<h2 id="anuncio-mostra-entrega-a-combinar-com-o-vendedor">Anúncio mostra "Entrega a combinar com o vendedor"<a class="headerlink" href="#anuncio-mostra-entrega-a-combinar-com-o-vendedor" title="Permanent link">&para;</a></h2>
-<p>Possíveis causas:</p>
-<ul>
-<li>anúncio criado sem ME2;</li>
-<li>conta sem Mercado Envios habilitado;</li>
-<li>shipping não atualizado.</li>
-</ul>
-<p>Solução:</p>
-<p>Executar:</p>
-<div class="highlight"><pre><span></span><code><span class="n">item_service</span><span class="o">.</span><span class="n">atualizar_shipping</span><span class="p">(</span>
-    <span class="n">id_ml</span>
-<span class="p">)</span>
-</code></pre></div>
-<p>ou republicar o anúncio.</p>
-<hr />
-<h2 id="api-nao-retorna-me2">API não retorna "me2"<a class="headerlink" href="#api-nao-retorna-me2" title="Permanent link">&para;</a></h2>
-<p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;modes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;not_specified&quot;</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Isso significa que o Mercado Envios ainda não foi habilitado para a conta.</p>
-<hr />
-<h2 id="historico">Histórico<a class="headerlink" href="#historico" title="Permanent link">&para;</a></h2>
-<p>Durante a primeira publicação operacional do Janus Parts:</p>
-<div class="highlight"><pre><span></span><code>56 anúncios atualizados
-Mercado Envios habilitado
-ME2 funcionando
-Previsão de entrega ativa
-</code></pre></div>
-<p>A partir deste momento todos os anúncios passaram a utilizar a logística oficial do Mercado Livre.</p>
 
 
 

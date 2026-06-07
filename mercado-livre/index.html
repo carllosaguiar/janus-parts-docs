@@ -940,7 +940,7 @@ ml_item_service.py
 <p>Implementação atual:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MLAuthService</span><span class="p">:</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">obter_access_token</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_access_token</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span>
             <span class="s2">&quot;ML_ACCESS_TOKEN&quot;</span>
         <span class="p">)</span>
@@ -969,19 +969,19 @@ Picture ID
 <h2 id="ml_item_servicepy">ml_item_service.py<a class="headerlink" href="#ml_item_servicepy" title="Permanent link">&para;</a></h2>
 <p>Responsável pelo gerenciamento dos anúncios.</p>
 <p>Métodos implementados:</p>
-<div class="highlight"><pre><span></span><code>obter_item()
-listar_itens_usuario()
-criar_item()
-atualizar_imagens()
-atualizar_preco()
-atualizar_estoque()
-atualizar_shipping()
+<div class="highlight"><pre><span></span><code>get_item()
+list_user_items()
+create_item()
+update_image()
+update_price()
+update_inventory()
+update_shipping()
 </code></pre></div>
 <hr />
 <h2 id="consulta-de-anuncio">Consulta de Anúncio<a class="headerlink" href="#consulta-de-anuncio" title="Permanent link">&para;</a></h2>
 <p>Permite consultar um anúncio existente.</p>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">item</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">obter_item</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">item</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span>
     <span class="s2">&quot;MLB6880703648&quot;</span>
 <span class="p">)</span>
 </code></pre></div>
@@ -989,7 +989,7 @@ atualizar_shipping()
 <h2 id="listagem-de-anuncios">Listagem de Anúncios<a class="headerlink" href="#listagem-de-anuncios" title="Permanent link">&para;</a></h2>
 <p>Permite listar anúncios da conta.</p>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">itens</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">listar_itens_usuario</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">itens</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">list_user_items</span><span class="p">()</span>
 </code></pre></div>
 <p>Resultado:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
@@ -1041,7 +1041,7 @@ Atualizar envio
 <h2 id="atualizacao-de-imagens">Atualização de Imagens<a class="headerlink" href="#atualizacao-de-imagens" title="Permanent link">&para;</a></h2>
 <p>Substitui completamente as imagens do anúncio.</p>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">atualizar_imagens</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">update_image</span><span class="p">(</span>
     <span class="s2">&quot;MLB6880703648&quot;</span><span class="p">,</span>
     <span class="p">[</span>
         <span class="n">produto_id</span><span class="p">,</span>
@@ -1052,7 +1052,7 @@ Atualizar envio
 <hr />
 <h2 id="atualizacao-de-preco">Atualização de Preço<a class="headerlink" href="#atualizacao-de-preco" title="Permanent link">&para;</a></h2>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">atualizar_preco</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">update_price</span><span class="p">(</span>
     <span class="s2">&quot;MLB6880703648&quot;</span><span class="p">,</span>
     <span class="mf">3627.26</span>
 <span class="p">)</span>
@@ -1060,7 +1060,7 @@ Atualizar envio
 <hr />
 <h2 id="atualizacao-de-estoque">Atualização de Estoque<a class="headerlink" href="#atualizacao-de-estoque" title="Permanent link">&para;</a></h2>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">atualizar_estoque</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">service</span><span class="o">.</span><span class="n">update_inventory</span><span class="p">(</span>
     <span class="s2">&quot;MLB6880703648&quot;</span><span class="p">,</span>
     <span class="mi">5</span>
 <span class="p">)</span>

@@ -265,7 +265,7 @@ O próprio Janus Parts é responsável por preencher e manter esse campo atualiz
 
 Alterar manualmente esse valor pode fazer com que o sistema atualize o anúncio errado.
 
-# Como Atualizar a Planilha de Produtos
+## Como Atualizar a Planilha de Produtos
 
 ## Objetivo
 
@@ -275,7 +275,7 @@ Sempre que houver novos produtos para serem adicionados, basta preencher a plani
 
 ---
 
-# Onde Cadastrar os Produtos
+### Onde Cadastrar os Produtos
 
 Acesse a aba:
 
@@ -287,7 +287,7 @@ Sempre adicione os novos produtos ao final da tabela.
 
 ---
 
-# Informações que Devem Ser Preenchidas
+### Informações que Devem Ser Preenchidas
 
 Sempre que possível, preencher:
 
@@ -306,7 +306,7 @@ Quanto mais informações forem preenchidas, melhor.
 
 ---
 
-# Compatibilidade com Veículos
+### Compatibilidade com Veículos
 
 Caso o produto seja compatível com veículos específicos, informe também:
 
@@ -322,7 +322,7 @@ Compatibilidades_ML
 
 ---
 
-# O Que Não Deve Ser Feito
+### O Que Não Deve Ser Feito
 
 Não alterar:
 
@@ -340,7 +340,7 @@ Não criar novas colunas.
 
 ---
 
-# Antes de Enviar a Planilha
+### Antes de Enviar a Planilha
 
 Verifique:
 
@@ -354,13 +354,13 @@ Depois basta salvar a planilha e enviá-la.
 
 ---
 
-# Em Caso de Dúvida
+### Em Caso de Dúvida
 
 Se houver dúvida sobre alguma informação, deixe o campo em branco e informe a dúvida junto com a planilha.
 
 Não altere a estrutura da planilha.
 
-## Campos Preenchidos ou Controlados pelo Sistema
+### Campos Preenchidos ou Controlados pelo Sistema
 
 Os campos abaixo são utilizados pela automação e não devem ser alterados sem orientação.
 

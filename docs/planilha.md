@@ -275,7 +275,7 @@ Sempre que houver novos produtos para serem adicionados, basta preencher a plani
 
 ---
 
-### Onde Cadastrar os Produtos
+## Onde Cadastrar os Produtos
 
 Acesse a aba:
 
@@ -287,7 +287,7 @@ Sempre adicione os novos produtos ao final da tabela.
 
 ---
 
-### Informações que Devem Ser Preenchidas
+## Informações que Devem Ser Preenchidas
 
 Sempre que possível, preencher:
 
@@ -306,7 +306,7 @@ Quanto mais informações forem preenchidas, melhor.
 
 ---
 
-### Compatibilidade com Veículos
+## Compatibilidade com Veículos
 
 Caso o produto seja compatível com veículos específicos, informe também:
 
@@ -322,7 +322,7 @@ Compatibilidades_ML
 
 ---
 
-### O Que Não Deve Ser Feito
+## O Que Não Deve Ser Feito
 
 Não alterar:
 
@@ -340,7 +340,7 @@ Não criar novas colunas.
 
 ---
 
-### Antes de Enviar a Planilha
+## Antes de Enviar a Planilha
 
 Verifique:
 
@@ -354,35 +354,35 @@ Depois basta salvar a planilha e enviá-la.
 
 ---
 
-### Em Caso de Dúvida
+## Em Caso de Dúvida
 
 Se houver dúvida sobre alguma informação, deixe o campo em branco e informe a dúvida junto com a planilha.
 
 Não altere a estrutura da planilha.
 
-### Campos Preenchidos ou Controlados pelo Sistema
+## Campos Preenchidos ou Controlados pelo Sistema
 
 Os campos abaixo são utilizados pela automação e não devem ser alterados sem orientação.
 
-### ID ML
+## ID ML
 
 Código do anúncio no Mercado Livre.
 
 Preenchido automaticamente após a publicação.
 
-### STATUS_CADASTRO
+## STATUS_CADASTRO
 
 Utilizado pelo sistema para controlar o estado do produto.
 
 Atualizado automaticamente durante os processos de publicação e atualização.
 
-### LISTING_TYPE_SUGERIDO
+## LISTING_TYPE_SUGERIDO
 
 Utilizado pela automação para definir ou sugerir o tipo de anúncio.
 
 Alterar este campo sem conhecimento do processo pode gerar comportamentos inesperados.
 
-### VALIDAR_MANUALMENTE
+## VALIDAR_MANUALMENTE
 
 Campo utilizado para controle interno de validações.
 
